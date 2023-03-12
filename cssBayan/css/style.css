@@ -69,10 +69,22 @@ h1 {
     body {
         font-size: 1.5em;
     }
+    .accordion-content img {
+        width: 50%;
+        height: auto;
+        margin: 20px 0;
+        transition: 2s;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 819px) {
     body {
         font-size: 2em;
-    } 
+    }
+    .accordion-content img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        transition: 2s;
+    }
 }
