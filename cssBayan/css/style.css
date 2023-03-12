@@ -1,7 +1,7 @@
 body {
     background: #F0F0F0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 h1 {
     padding-bottom: 20px;
@@ -35,6 +35,7 @@ h1 {
 .accordion-title {
     font-weight: 700;
     color: #3459c7;
+    padding-right: 1em;
 }
 .accordion-icon {
     width: auto;
@@ -55,10 +56,23 @@ h1 {
  }
 .accordion-content {
     display: none;
-    clear: left;
     text-align: center;
 }
 .accordion-content img {
-    max-height: 400px;
+    width: 50%;
+    height: auto;
+    margin: 20px 0;
     transition: 2s;
+}
+
+@media (min-width: 820px) and (max-width: 1919px) {
+    body {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 819px) {
+    body {
+        font-size: 2em;
+    } 
 }
