@@ -1,0 +1,64 @@
+body {
+    background: #F0F0F0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.main {
+    width: 70%;
+    margin: 0 auto;
+}
+.accordion {
+    padding: 0;
+}
+.accordion:hover .accordion-title {
+    color: #000000;
+}
+.accordion-item {
+    list-style: none;
+    padding: 15px 0 15px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.accordion-item:last-child {
+    border: none;
+}
+.accordion-item:hover {
+    cursor: pointer;
+ }
+ .accordion-item-inner {
+    display: flex;
+    justify-content: space-between;
+ }
+.accordion-title {
+    font-weight: 700;
+    color: #3459c7;
+}
+.accordion-icon {
+    width: auto;
+    height: auto;
+}
+.accordion-icon img {
+    transition: 0.5s;
+}
+.accordion-item:hover .accordion-icon img {
+    transform: rotate(45deg);
+    transition: 0.5s;
+ }
+.accordion-item.one:hover .accordion-content.one,
+.accordion-item.two:hover .accordion-content.two,
+.accordion-item.three:hover .accordion-content.three,
+.accordion-item.four:hover .accordion-content.four {
+    display: block;
+ }
+.accordion-content {
+    display: none;
+    clear: left;
+    text-align: center;
+}
+.accordion-content img {
+    max-height: 400px;
+    transition: 2s;
+}
